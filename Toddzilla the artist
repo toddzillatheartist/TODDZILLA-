@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toddzilla - Official Music Page</title>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Toddzilla",
+      "description": "Toddzilla is a dynamic hip-hop artist known for gritty lyricism, raw energy, and authentic storytelling. His music blends traditional boom-bap beats with modern trap influences, creating a sound that appeals to both old-school hip-hop enthusiasts and contemporary rap fans. His work is characterized by introspective themes, streetwise narratives, and a drive to push the boundaries of the genre.",
+      "url": "https://youtube.com/@toddzillatheartist",
+      "sameAs": [
+        "https://www.instagram.com/txddzxilla/",
+        "https://www.facebook.com/toddzilla.toddzilla",
+        "https://youtube.com/@toddzillatheartist?si=SwDqB0dwc21R-GXf",
+        "https://open.spotify.com/artist/32OKCWSCP3pEqajz9uPb7y",
+        "https://music.apple.com/us/artist/toddzilla/1681151662"
+      ],
+      "genre": ["Hip-hop", "Rap", "Boom-bap", "Trap"],
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Albuquerque",
+          "addressRegion": "New Mexico",
+          "addressCountry": "US"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "CreativeWork",
+        "about": "Toddzilla's music frequently explores themes of struggle, resilience, and self-discovery. His lyrics delve into personal experiences, societal issues, and the complexities of urban life. Tracks often reflect a balance between vulnerability and bravado, offering listeners a window into his world while maintaining a universal relatability."
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MusicRecording",
+            "name": "Music by Toddzilla",
+            "inAlbum": {
+              "@type": "MusicAlbum",
+              "name": "Toddzilla's Music Collection"
+            }
+          },
+          "availableOnDevice": [
+            "Spotify",
+            "Apple Music",
+            "YouTube"
+          ]
+        }
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Originally from Arizona"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .header {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+            position: relative;
+        }
+        
+        .logo-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Music player styling */
+        .music-player {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #111;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .player-header {
+            padding: 20px;
+            background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+            text-align: center;
+        }
+        
+        .player-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .player-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="toddzilla-logo.jpg" alt="Toddzilla Logo" class="logo">
+        </div>
+    </header>
+    
+    <div class="content">
+        <h1>Toddzilla</h1>
+        <p>Dynamic hip-hop artist known for gritty lyricism, raw energy, and authentic storytelling.</p>
+        
+        <!-- YouTube Music Player -->
+        <div class="music-player">
+            <div class="player-header">
+                <h2>Listen to Toddzilla</h2>
+            </div>
+            <div class="player-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID" 
+                    title="Toddzilla Music Collection" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
